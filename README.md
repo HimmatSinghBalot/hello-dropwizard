@@ -64,6 +64,12 @@ I have used google cloud's container shell for creating static docker image. i h
  $ docker build -t demo-app .
  $ docker run -d -p 8080:8080 demo-app
 ```
+- As an alternative, you can pull docker image from my public docker repo : 
+
+```sh
+$ docker pull himmat/demo-app
+$ docker run -d -p 8080:8080 demo-app
+```
 
 #### Result : 
 Verify the deployment by hitting below address :
