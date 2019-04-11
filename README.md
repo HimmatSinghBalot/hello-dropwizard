@@ -41,6 +41,34 @@ Your next task is to take the recently built hello-dropwizard service:
 *Bonus (Optional)*
 - If you haven't already, create an efficient docker image based on best practices for at least one service. Be prepared to explain why it's efficient.
 
+- I will explain why it is efficent during Discussion. I have used docker container shell to build your code and 
+
 ## Results
 
 Make the dev environment automation available via a public github repo with any instructions on how to run your dev environment in an accompanying `README.md` file. Send it in and be prepared to discuss it.
+
+
+### Description for task : 
+I have used google cloud's container shell for creating static docker image. i have fork your application code repository and bulid complete docker image for running Dropwizard Hello World application.
+ 
+ ##### Tool Used : 
+   - Docker - used google cloud shell
+   - git
+
+##### Development Steps for running dropwizard application : 
+- Clone repository in your local directory and execute below commands : 
+
+ ```sh
+ $ git clone https://github.com/HimmatSinghBalot/hello-dropwizard.git
+ $ cd hello-dropwizard
+ $ docker build -t demo-app .
+ $ docker run -d -p 8080:8080 demo-app
+```
+
+#### Result : 
+Verify the deployment by hitting below address :
+
+ ```sh
+ *himmat_singh_balot@cloudshell:~/project/hello-dropwizard (xenon-effect-192309)$ curl http://localhost:8080/hello-world?name=Emirates
+{"id":1,"content":"Hello, Emirates!"}
+```
