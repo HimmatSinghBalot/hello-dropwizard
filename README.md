@@ -41,8 +41,6 @@ Your next task is to take the recently built hello-dropwizard service:
 *Bonus (Optional)*
 - If you haven't already, create an efficient docker image based on best practices for at least one service. Be prepared to explain why it's efficient.
 
-- I will explain why it is efficent during Discussion. I have used docker container shell to build your code and 
-
 ## Results
 
 Make the dev environment automation available via a public github repo with any instructions on how to run your dev environment in an accompanying `README.md` file. Send it in and be prepared to discuss it.
